@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Geometria";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Geometria"), url("../fonts/Geometria.woff") format("woff");
+}
+@font-face {
+  font-family: "Geometria-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Geometria-Medium"), url("../fonts/Geometria-Medium.woff") format("woff");
+}
+body {
+  background-color: rgba(148, 166, 192, 0.2039215686);
+  font-family: "Geometria";
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.content__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__container .header__logo {
+  margin-left: 45px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 269px;
+}
+.header .header__menu {
+  margin: -28px 74px -28px 74px;
+}
+.header .menu__element {
+  padding: 28px 0 28px 0;
+}
+.header .menu__element a:hover p {
+  color: rgba(105, 113, 127, 0.368627451);
+  transition: all 0.1s ease-in-out;
+}
+.header .menu__element p {
+  color: #69717F;
+}
+
+.main {
+  background-color: #F2F3F9;
+  border-radius: 10px;
+}

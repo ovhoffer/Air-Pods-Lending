@@ -1,0 +1,97 @@
+@font-face {
+   font-family: 'Geometria';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Geometria'), url('../fonts/Geometria.woff') format('woff');
+   }
+@font-face {
+      font-family: 'Geometria-Medium';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Geometria-Medium'), url('../fonts/Geometria-Medium.woff') format('woff');
+      }
+      
+
+ 
+ body {
+   background-color: #94a6c034;
+   font-family: 'Geometria';
+ }  
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   
+}
+
+.content__container {
+   display: flex;
+   flex-direction: row;
+ 
+}
+.header__container {
+   .header__logo {
+      margin-left: 45px;
+      margin-top: 45px;
+      margin-bottom: 45px;
+   }
+}
+.header {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   min-width: 269px;
+ 
+   .header__menu {
+      margin: -28px 74px -28px 74px;
+   }
+
+   .menu__element {
+      padding: 28px 0 28px 0;
+      
+      a:hover {
+         p {
+            color: #69717f5e;
+            transition: all 0.1s ease-in-out;
+         }
+      }
+      p {
+         color: #69717F;
+      }
+   }
+}
+
+.main {
+   background-color: #F2F3F9;
+   border-radius: 10px;
+}
+.main__sidebar {
+}
+.main__content {
+}
+.content__background {
+}
+.content__title {
+}
+.content__info {
+}
+.info__title {
+}
+.info__text {
+}
+.info__price {
+}
+.price__number {
+}
+.price__order {
+}
+.main__slider {
+}
+.footer {
+}
+.footer__search {
+}
+.footer__nav {
+}
+.footer__country {
+}
