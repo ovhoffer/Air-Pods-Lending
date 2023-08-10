@@ -21,7 +21,7 @@
 .wrapper {
    min-height: 100%;
    overflow: hidden;
-   
+   margin: 7px;
 }
 
 .content__container {
@@ -31,9 +31,13 @@
 }
 .header__container {
    .header__logo {
-      margin-left: 45px;
-      margin-top: 45px;
+      margin-left: 38px;
+      margin-top: 38px;
       margin-bottom: 45px;
+
+      img {
+         width: 20%;
+      }
    }
 }
 .header {
@@ -47,10 +51,12 @@
    }
 
    .menu__element {
+      //font-size: 14px;
       padding: 28px 0 28px 0;
       
       a:hover {
          p {
+            
             color: #69717f5e;
             transition: all 0.1s ease-in-out;
          }
@@ -62,24 +68,75 @@
 }
 
 .main {
+   display: flex;
+   flex-direction: column;
+  // position: relative;
    background-color: #F2F3F9;
    border-radius: 10px;
+   width: 100%;
+   
+   // &:first-child{
+   //    z-index: 122;
+   //   }
+
+   .content__background {
+      position: absolute;
+      img {
+         min-width: 100%;
+         min-height: 668px;
+         border-radius: 10px;
+      }
+   }
 }
-.main__sidebar {
-}
+
+
 .main__content {
+   margin-top: 199px;
+   position: relative;
+   z-index: 1000;
+  
+  
+   .content__title {
+   position: absolute;
+   z-index: 20000;
+   min-width: 100%;
+    min-height: 100%;
+    margin-top: -125px;
+    
+   }
+   .content__info {
+      margin-left: 120px;
+      .info__title {
+         max-width: 367px;
+         font-family: 'Geometria-Medium';
+         color: #14243b50;
+         font-size: 38px;
+      }
+      
+      .info__text {
+      p{
+            max-width: 390px;
+            color: #25282d5d;
+      }
+      }
+
+   }
+  
 }
-.content__background {
-}
-.content__title {
-}
-.content__info {
-}
-.info__title {
-}
-.info__text {
-}
+
+
+
+
 .info__price {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   max-width: 429px;
+   background-color: rgba(16, 33, 65, 0.25);;
+   border-radius: 30px;
+   padding: 14px 14px;
+   margin-top: 30px;
+   color: #FFF
 }
 .price__number {
 }
